@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+#main{
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'section section section section'
+                         'footer footer footer footer';
+    grid-template-rows: 500px 700px 200px;
+    grid-auto-columns: 25vw 25vw 25vw 25vw;             
+}
+header{
+    grid-area: header;
+    display: flex;
+    background-image: url(imagem/banner.png);
+    align-items: center;
+    justify-content: space-evenly;  
+    position: relative;
+}
+header > div > div > h1{
+    font-family: "Pacifico";
+    color: white;
+}
+.contatos{
+    /* align-items: flex-start; */
+    width: 270px;
+    /* justify-content: center; */
+}
+.icones{
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    color: white;
+    }
+.img{
+    /* display: flex; */
+    align-self: flex-end;
+    /* justify-content: center;  */
+    width: 350px;
+}
+.img img{
+    position: absolute;
+    width: 23%;
+    bottom: 0;
+}
+section{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
